@@ -19,3 +19,11 @@ Console.WriteLine("\n== Battle Complete ==");
 Console.WriteLine($"Name: {name}");
 Console.WriteLine($"Total Battles: {battle}");
 Console.WriteLine($"Total Experience: {totalexp}");
+
+for (int i = 1; i <= totalexp; i++)
+{
+    if (i % 100 == 0)
+    {
+        Console.WriteLine("*** Milestone Reached! Total EXP: " + i + " ***");
+    }
+}
